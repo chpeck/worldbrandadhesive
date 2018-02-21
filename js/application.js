@@ -3,7 +3,38 @@ function imageError(source){
   return true;
 }
 
-$(function() {
+var root = null;
+var useHash = true; // Defaults to: false
+var hash = '#!'; // Defaults to: '#'
+var router = new Navigo(root, useHash, hash);
+// asyncrhonously fetch the html template partial from the file directory,
+// then set its contents to the html of the parent element
+function loadHTML(url, cb) {
+  req = new XMLHttpRequest();
+  req.open('GET', url);
+  req.send();
+  req.onload = () => {
+    $('#content').html(req.responseText)
+		if (cb) cb()
+  };
+}
+
+router.on({
+  '/contact.html': () => { loadHTML('./contact.html'); },
+  '/corporate.html': () => { loadHTML('./corporate.html'); },
+  '/products.html': () => {
+    loadHTML('./products.html', () => {
+      var source = document.getElementById("product-template").innerHTML;
+      var template = Handlebars.compile(source);
+      $.getJSON('products.json', function(data) {
+        var html = template(data)
+        $("#products").html(html)
+      });
+    });
+  }
+});
+
+function showSlides () {
   $('.slide').show();
   $('.slides').slides({
     preload: true,
@@ -25,4 +56,20 @@ $(function() {
       $('#products').html(data);
     });
   });
-});
+}
+
+function setYear () {
+  var year = new Date().getYear() + 1900
+  $('#copyright').html('Copyright &copy;' + year + ' World Brand Adhesive')
+}
+
+
+// set the default route
+router.on(() => {
+  loadHTML('./home.html', showSlides);
+})
+
+router.notFound((query) => { $('#content').innerHTML = '<h3>Couldn\'t find the page you\'re looking for...</h3>'; });
+
+router.resolve();
+setYear();
