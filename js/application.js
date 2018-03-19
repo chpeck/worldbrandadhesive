@@ -19,19 +19,39 @@ function loadHTML(url, cb) {
   };
 }
 
+function filterByTag (tag, data) {
+  return tag ? R.filter(
+    R.compose(
+      R.contains(tag),
+      R.propOr([], 'tags')
+    )
+  )(data) : data
+}
+
+var data = []
+$.getJSON('products.json', function(d) {
+  data = d
+})
+
+function renderProducts  (params) {
+  var tag = params && params.tag
+  loadHTML('./products.html', () => {
+    var source = document.getElementById("product-template").innerHTML;
+    var template = Handlebars.compile(source);
+    var filteredData = filterByTag(tag, data)
+    var html = template(filteredData)
+    $("#products").html(html)
+    if (tag) {
+      $("li#"+tag).attr("class", "active")
+    }
+  });
+}
+
 router.on({
   '/contact.html': () => { loadHTML('./contact.html'); },
   '/corporate.html': () => { loadHTML('./corporate.html'); },
-  '/products.html': () => {
-    loadHTML('./products.html', () => {
-      var source = document.getElementById("product-template").innerHTML;
-      var template = Handlebars.compile(source);
-      $.getJSON('products.json', function(data) {
-        var html = template(data)
-        $("#products").html(html)
-      });
-    });
-  }
+  '/:tag/products.html': renderProducts,
+  '/products.html': renderProducts
 });
 
 function showSlides () {

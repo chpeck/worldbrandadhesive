@@ -11,7 +11,7 @@
   "imageSource": "/images/1.jpg?1420046369",
   "description": "Contact adhesive for polyurethane foam & carpet.",
   "availableIn": "3 kg / 15 kg / 160 kg",
-  "tags": ["carpeting", "flooring", "carpet", "polyurethane foam"],
+  "tags": ["carpeting", "flooring", "carpet", "polyurethane-foam"],
   "technicalSpecification": "/downloads/world_brand_200_adhesive.pdf"
 },
 {
@@ -19,7 +19,7 @@
   "imageSource": "/images/24.jpg",
   "description": "A quality synthetic rubber. Super strong, flexible, water-proof and chemical resistant. Will bond to natural surfaces like wood and rubber. Will also adhere to artificial leathers, rubberized fabrics, glassy metals, ceramics, hardboards, linoleum, rigid plastics & concrete.",
   "availableIn": "1 US gal",
-  "tags": ["eco-friendly", "general purpose", "cement", "ceramics", "hardboard", "linoleum", "plastics", "rubber", "wood"],
+  "tags": ["eco-friendly", "general-purpose", "cement", "ceramics", "hardboard", "linoleum", "plastics", "rubber", "wood"],
   "technicalSpecification": "/downloads/world_brand_3000_adhesive.pdf"
 },
 {
@@ -51,7 +51,7 @@
   "imageSource": "/images/5.jpg?1420046369",
   "description": "Spray adhesive medium viscosity for polyurethane foam, fibre glass & wood",
   "availableIn": "3 kg / 15 kg / 160 kg",
-  "tags": ["woodworking", "fibreglass", "polyurethane foam", "wood"],
+  "tags": ["woodworking", "fibre-glass", "polyurethane-foam", "wood"],
   "technicalSpecification": "/downloads/msds-wb800.pdf"
 },
 {
@@ -59,7 +59,7 @@
   "imageSource": "/images/23.jpg",
   "description": "A quality synthetic rubber. Flexible water-proof and chemical resistant. Good for use with simulated leathers, poromeric material, fabrics, vulanized rubber, wood, glass metals, ceramics, hardboards, linoleum, concrete and rigid plastics.",
   "availableIn": "1 US gal",
-  "tags": ["eco-friendly", "general purpose", "cement", "glass", "hardboard", "leather", "metal", "rubber", "textile"],
+  "tags": ["eco-friendly", "general-purpose", "cement", "glass", "hardboard", "leather", "metal", "rubber", "textile"],
   "technicalSpecification": "/downloads/world_brand_808_adhesive.pdf"
 },
 {
@@ -67,7 +67,7 @@
   "imageSource": "/images/15.jpg",
   "description": "Odourless Polystyrene Foam Contact Adhesive.",
   "availableIn": "1 US gal / 5 US gal",
-  "tags": ["aluminium", "cement", "fibreglass", "steel"],
+  "tags": ["aluminium", "cement", "fibre-glass", "steel"],
   "technicalSpecification": "/downloads/world_brand_8830_polystyrene_adhesive.pdf"
 },
 {
@@ -75,7 +75,7 @@
   "imageSource": "/images/12.jpg?1420046369",
   "description": "Silicone for general glazing and various DIY purposes.",
   "availableIn": "300 ml",
-  "tags": ["general purpose", "glazing", "glass", "plastics"],
+  "tags": ["general-purpose", "glazing", "glass", "plastics"],
   "technicalSpecification": "/downloads/msds-world_acetoxy_silicone_sealant.pdf"
 },
 {
@@ -83,7 +83,7 @@
   "imageSource": "/images/11.jpg?1420046369",
   "description": "Acrylic sealant for general glazing & various DIY applications.",
   "availableIn": "450 gm",
-  "tags": ["flooring", "general purpose", "glazing", "woodworking", "aluminium"],
+  "tags": ["flooring", "general-purpose", "glazing", "woodworking", "aluminium"],
   "technicalSpecification": "/downloads/msds-world_acrylic.pdf"
 },
 {
@@ -99,7 +99,7 @@
   "imageSource": "/images/21.jpg?1420046369",
   "description": "Water-based adhesive for difficult surfaces.",
   "availableIn": "20 kg",
-  "tags": ["book binding", "carpeting", "flooring", "general purpose", "upholstery", "carpet", "fibreglass", "hardboard", "leather", "plastics", "plywood", "polyurethane foam", "pvc", "rubber", "textile", "wood"],
+  "tags": ["book-binding", "carpeting", "flooring", "general-purpose", "upholstery", "carpet", "fibre-glass", "hardboard", "leather", "plastics", "plywood", "polyurethane-foam", "pvc", "rubber", "textile", "wood"],
   "technicalSpecification": "/downloads/eva_3013_adhesive-technical.pdf"
 },
 {
@@ -107,7 +107,7 @@
   "imageSource": "/images/6.jpg?1420046369",
   "description": "Spray adhesive heat resistant for polyurethane foam, fibre glass & wood",
   "availableIn": "3 kg / 15 kg / 160 kg",
-  "tags": ["woodworking", "fibreglass", "polyurethane foam", "wood"],
+  "tags": ["woodworking", "fibre-glass", "polyurethane-foam", "wood"],
   "technicalSpecification": "/downloads/world_brand_g-spray.pdf"
 },
 {
@@ -115,7 +115,7 @@
   "imageSource": "/images/13.jpg?1420046369",
   "description": "Heat resistant spray adhesive for polyurethane foam, fibre glass & wood",
   "availableIn": "3 kg / 15 kg / 160 kg",
-  "tags": ["upholstery", "fibreglass", "polyurethane foam", "wood"],
+  "tags": ["upholstery", "fibre-glass", "polyurethane-foam", "wood"],
   "technicalSpecification": "/downloads/world_brand_high_g-spray.pdf"
 },
 {
@@ -147,7 +147,7 @@
   "imageSource": "/images/18.jpg?1420046369",
   "description": "Water-based adhesive for general purposes.",
   "availableIn": "20 kg / 200 kg",
-  "tags": ["general purpose"],
+  "tags": ["general-purpose"],
   "technicalSpecification": "/downloads/pva_323_adhesive-techical.pdf"
 },
 {
